@@ -67,7 +67,6 @@
         title: '',
         label: '',
         labelRight: '',
-        defaultChecked: '',
         theme: 'rsbc-switch-button-flat-round',
         checked: null,
         onChange: this.handleChange
