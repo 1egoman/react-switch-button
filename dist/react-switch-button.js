@@ -48,8 +48,6 @@
       name: React.PropTypes.string,
       title: React.PropTypes.string,
       label: React.PropTypes.string,
-      labelRight: React.PropTypes.string,
-      theme: React.PropTypes.string,
       onChange: React.PropTypes.func
     },
 
@@ -64,8 +62,6 @@
         name: 'switch-button',
         title: '',
         label: '',
-        labelRight: '',
-        theme: 'rsbc-switch-button-flat-round',
         checked: null,
         onChange: this.handleChange
       };
@@ -96,17 +92,9 @@
         );
       }
 
-      if (this.props.labelRight != '') {
-        labelRight = React.createElement(
-          'label',
-          { htmlFor: id },
-          this.props.labelRight
-        );
-      }
-
       return React.createElement(
         'div',
-        { className: 'rsbc-switch-button ' + this.props.theme },
+        { className: 'rsbc-switch-button rsbc-switch-button-flat-round' },
         label,
         React.createElement('input', Object.assign({type: 'checkbox'}, this.props, {children: undefined})),
         React.createElement('label', { htmlFor: id }),
