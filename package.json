@@ -2,7 +2,7 @@
   "name": "react-switch-button",
   "version": "1.1.2",
   "description": "A React UI Component to display an awesome Switch (swipe) Button control",
-  "main": "dist/react-switch-button.min.js",
+  "main": "dist/react-switch-button.js",
   "scripts": {
     "build": "npm run build:jsx && npm run build:cp && npm run example && npm run example:jsx && npm run less:minify",
     "build:jsx": "./node_modules/.bin/babel --presets ../node_modules/babel-preset-react src --out-dir dist",
