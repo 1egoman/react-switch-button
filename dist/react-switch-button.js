@@ -49,9 +49,7 @@
       title: React.PropTypes.string,
       label: React.PropTypes.string,
       labelRight: React.PropTypes.string,
-      defaultChecked: React.PropTypes.string,
       theme: React.PropTypes.string,
-      checked: React.PropTypes.string,
       onChange: React.PropTypes.func
     },
 
